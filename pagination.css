@@ -1,0 +1,38 @@
+.paginationjs-pages > ul > li > a {
+  padding: 6px 18px;
+  color: #207ce5;
+  background-color: white;
+  border: 1px solid #207ce5;
+  text-decoration: none;
+}
+.paginationjs-pages > ul > li > a:hover {
+  color: black;
+  background-color: #207ce5;
+}
+.paginationjs-pages > ul > li.active > a {
+  color: black;
+  background-color: #207ce5;
+}
+.paginationjs-pages > ul > li.disabled > a {
+  color: black;
+  background-color: white;
+}
+.paginationjs-prev {
+  margin: 0 16px 0 0;
+}
+.paginationjs-next {
+  margin: 0 0 0 16px;
+}
+.paginationjs-page {
+  margin: 0 4px;
+}
+.paginationjs-pages > ul {
+  display: flex;
+  align-items: baseline;
+}
+.paginationjs-pages > ul > li.paginationjs-ellipsis.disabled > a {
+  border: none;
+  color: black;
+  margin: 0 4px;
+  padding: 0;
+}
