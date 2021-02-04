@@ -10,6 +10,8 @@
   background-color: #1a1a1a;
   outline: none;
   z-index: 1;
+  -webkit-transition: background-color 0.5s ease-in;
+  transition: background-color 0.5s ease-in;
 }
 
 .menu-icon > span {
@@ -21,23 +23,25 @@
 }
 
 .menu-icon > span:nth-of-type(1) {
-  -webkit-animation: reactive-menu-icon-upper 0.3s ease-in forwards;
-          animation: reactive-menu-icon-upper 0.3s ease-in forwards;
+  -webkit-animation: reactive-menu-icon-upper 0.5s ease-in forwards;
+          animation: reactive-menu-icon-upper 0.5s ease-in forwards;
 }
 
 .menu-icon > span:nth-of-type(2) {
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
   opacity: 1;
 }
 
 .menu-icon > span:nth-of-type(3) {
-  -webkit-animation: reactive-menu-icon-lower 0.3s ease-in forwards;
-          animation: reactive-menu-icon-lower 0.3s ease-in forwards;
+  -webkit-animation: reactive-menu-icon-lower 0.5s ease-in forwards;
+          animation: reactive-menu-icon-lower 0.5s ease-in forwards;
 }
 
 .menu-icon.menu-open {
   background-color: white;
+  -webkit-transition: background-color, 0.5s ease-in;
+  transition: background-color, 0.5s ease-in;
 }
 
 .menu-icon.menu-open > span {
@@ -45,19 +49,19 @@
 }
 
 .menu-icon.menu-open > span:nth-of-type(1) {
-  -webkit-animation: active-menu-icon-upper 0.3s ease-in forwards;
-          animation: active-menu-icon-upper 0.3s ease-in forwards;
+  -webkit-animation: active-menu-icon-upper 0.5s ease-in forwards;
+          animation: active-menu-icon-upper 0.5s ease-in forwards;
 }
 
 .menu-icon.menu-open > span:nth-of-type(2) {
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
   opacity: 0;
 }
 
 .menu-icon.menu-open > span:nth-of-type(3) {
-  -webkit-animation: active-menu-icon-lower 0.3s ease-in forwards;
-          animation: active-menu-icon-lower 0.3s ease-in forwards;
+  -webkit-animation: active-menu-icon-lower 0.5s ease-in forwards;
+          animation: active-menu-icon-lower 0.5s ease-in forwards;
 }
 
 @-webkit-keyframes reactive-menu-icon-upper {

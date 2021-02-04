@@ -1,5 +1,6 @@
 $cBlack: #1a1a1a;
 $cWhite: white;
+$duration: 0.5s;
 
 .menu-icon {
   position: fixed;
@@ -16,6 +17,7 @@ $cWhite: white;
   background-color: $cBlack;
   outline: none;
   z-index: 1;
+  transition: background-color $duration ease-in;
 
   & > span {
     background-color: $cWhite;
@@ -24,31 +26,32 @@ $cWhite: white;
     display: block;
     margin-bottom: 5px;
     &:nth-of-type(1) {
-      animation: reactive-menu-icon-upper 0.3s ease-in forwards;
+      animation: reactive-menu-icon-upper $duration ease-in forwards;
     }
     &:nth-of-type(2) {
-      transition: opacity 0.3s ease;
+      transition: opacity $duration ease;
       opacity: 1;
     }
     &:nth-of-type(3) {
-      animation: reactive-menu-icon-lower 0.3s ease-in forwards;
+      animation: reactive-menu-icon-lower $duration ease-in forwards;
     }
   }
 
   &.menu-open {
     background-color: $cWhite;
+    transition: background-color, $duration ease-in;
     & > span {
       background-color: $cBlack;
 
       &:nth-of-type(1) {
-        animation: active-menu-icon-upper 0.3s ease-in forwards;
+        animation: active-menu-icon-upper $duration ease-in forwards;
       }
       &:nth-of-type(2) {
-        transition: opacity 0.3s ease;
+        transition: opacity $duration ease;
         opacity: 0;
       }
       &:nth-of-type(3) {
-        animation: active-menu-icon-lower 0.3s ease-in forwards;
+        animation: active-menu-icon-lower $duration ease-in forwards;
       }
     }
   }
